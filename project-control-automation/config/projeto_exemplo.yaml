@@ -1,0 +1,24 @@
+project:
+  name: "Projeto Exemplo"
+  code: "projeto_exemplo"
+
+paths:
+  input_folder: "input/projeto_exemplo"
+  output_folder: "output/projeto_exemplo"
+
+  ldd_file: "LDD.xlsx"
+  dashboard_file: "Dashboard.xlsx"
+  curva_s_file: "CurvaS.xlsx"
+
+ldd:
+  sheet_name: 0
+  header_row: 3
+
+ldd_columns:
+  item: "ITEM"
+  discipline: "DISCIPLINA"
+  document_number: "Nº DOCUMENTO EMPRESA"
+  client_document: "Nº DOCUMENTO CLIENTE"
+  status: "STATUS DO DOCUMENTO (Incluído, Conforme Aprovado ou Cancelado)"
+  planned_issue_date: "DATA PREVISTA EMISSÃO"
+  actual_issue_date: "DATA GRD EMISSÃO"
