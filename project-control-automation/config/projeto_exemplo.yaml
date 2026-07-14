@@ -5,14 +5,24 @@ project:
 paths:
   input_folder: "input/projeto_exemplo"
   output_folder: "output/projeto_exemplo"
-
   ldd_file: "LDD.xlsx"
-  dashboard_file: "Dashboard.xlsx"
-  curva_s_file: "CurvaS.xlsx"
+  dashboard_file: "Lista de Documento - DashBoardC.xlsx"
+  curva_s_file: "BL1132-0001-CurvaS.xlsx"
 
 ldd:
   sheet_name: 0
   header_row: 3
+
+dashboard:
+  sheet_name: "LD-ELFA"
+  cronograma_sheet: "Cronograma"
+  cronograma_real_cell: "I3"
+
+curve_s:
+  sheet_name: "Curva S"
+  header_scan_rows: 30
+  realizado_acumulado_label: "Realizado Acumulado"
+  realizado_semanal_label: "Realizado Semanal"
 
 ldd_columns:
   item: "ITEM"
@@ -22,3 +32,13 @@ ldd_columns:
   status: "STATUS DO DOCUMENTO (Incluído, Conforme Aprovado ou Cancelado)"
   planned_issue_date: "DATA PREVISTA EMISSÃO"
   actual_issue_date: "DATA GRD EMISSÃO"
+
+ldd_rules:
+  emitted_statuses:
+    - "Emitido"
+    - "Aprovado"
+  comment_statuses:
+    - "Em comentários"
+    - "Comentado"
+  cancelled_statuses:
+    - "Cancelado"
